@@ -1,0 +1,52 @@
+/* global view */
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: aqua;
+
+    min-height: 100vh;
+    max-width: 1024px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    margin-bottom: 40px;
+
+    background-color: blueviolet;
+
+    min-height: 200px;
+    width: 30%;
+}
+
+.global-view-block {
+    display: none;
+}
+
+/* tab view */
+
+@media(max-width: 768px){
+    .box {
+        width: 47%;
+    }
+
+    .global-view-block {
+        display: block;
+    }
+}
+
+/* mobile view */
+
+@media(max-width: 420px) {
+    .box {
+        width:100%
+    }
+
+    .mobile-view-block {
+        display: none;
+    }
+}
