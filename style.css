@@ -6,10 +6,10 @@ body {
 }
 
 .header-container {
-    min-height: 100px;
     background-color: rgb(60, 60, 60);
     position: sticky;
     top: 0;
+    min-height: 100px;
 }
 
 header {
@@ -19,8 +19,6 @@ header {
     margin-left: auto;
     margin-right: auto;
 
-    /* background-color: blueviolet; */
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,15 +26,36 @@ header {
     font-size: 20px;
 }
 
+.mobile-wrapper {
+    margin-right: 20px;
+    min-width: 100px;
+    display: none;
+    text-align: right;
+    display: none;
+    /* background-color: aquamarine; */
+}
+
+
+
 .bold {
     font-weight: bold;
 }
 
-nav a {
+.button {
     margin-left: 20px;
     border: 2px solid white;
     padding: 10px 25px;
     border-radius: 2px;
+    width: 80px;
+}
+
+.burger-menu {
+    width: 20px;
+    padding-right:10px;
+}
+
+.mob-nav {
+    display: none;
 }
 
 .container {
@@ -44,7 +63,7 @@ nav a {
     margin-right: auto;
     padding-top: 40px;
 
-    min-height: 100vh;
+    /* min-height: 100vh; */
     max-width: 1024px;
 
     display: flex;
@@ -81,7 +100,7 @@ nav a {
 
 /* tab view */
 
-@media(max-width: 768px){
+@media(max-width: 812px){
     .box {
         width: 47%;
     }
@@ -89,6 +108,60 @@ nav a {
     .global-view-block {
         display: block;
     }
+
+    .header-container {
+        position: relative;
+    }
+
+    header {
+        padding-top: 15px;
+        min-height: 50px;
+        /* display: block; */
+    }
+
+    .logo {
+        padding: 20px;
+        font-size: 15px;
+    }
+    
+    a {
+        width: 110px;
+        margin-bottom: 5px;
+        padding: 6px 2px;
+        
+        display: block;
+        text-align: center;
+
+        border: 2px solid white;
+        border-radius: 5px;
+
+        font-size: 15px;
+
+        background-color: rgb(106, 105, 105);
+    }
+
+    
+    .hide {
+        display: none;
+    }
+
+    .mobile-wrapper {
+        display: block;
+    }
+
+    .mob-nav {
+        padding-top: 25px;
+        display: block;
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        margin-left: -25px;
+        display: none;
+    }
+
+    /* a {
+        display: block;
+    } */
 }
 
 /* mobile view */
@@ -99,6 +172,10 @@ nav a {
     }
 
     .mobile-view-block {
+        display: none;
+    }
+
+    .mob-nav {
         display: none;
     }
 }
