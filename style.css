@@ -105,7 +105,7 @@ header {
 
 /* tab view */
 
-@media(max-width: 812px){
+@media(max-width: 880px){
     .box {
         width: 47%;
     }
