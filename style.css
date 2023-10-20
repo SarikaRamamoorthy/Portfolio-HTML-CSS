@@ -1,8 +1,13 @@
 /* global view */
+html {
+    background-color: #EBEBEB;
+}
+
 body {
     font-family: 'Asap', sans-serif;
     color: white;
-    background-color: #EBEBEB;
+    background-image: url("images/Logo\ Background.png");
+    background-position: center;
 }
 
 .header-container {
